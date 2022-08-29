@@ -17,6 +17,16 @@ public class Emprestimo {
 	private Livro livro;
 	private Amigo amigo;
 
+    public Emprestimo() {
+
+    }
+
+    public Emprestimo(int idAmigo, int idLivro, LocalDate dataEmprestimo, LocalDate dataDevolucao) {
+        this.idAmigo = idAmigo;
+        this.idLivro = idLivro;
+        this.dataEmprestimo = dataEmprestimo;
+        this.dataDevolucao = dataDevolucao;
+    }
 
     public int getidAmigo() {
         return idAmigo;
@@ -26,28 +36,28 @@ public class Emprestimo {
         this.idAmigo = idAmigo;
     }
 
-    public int getId_livro() {
-        return id_livro;
+    public int getidLivro() {
+        return idLivro;
     }
 
-    public void setId_livro(int id_livro) {
-        this.id_livro = id_livro;
+    public void setidLivro(int idLivro) {
+        this.idLivro = idLivro;
     }
 
-    public String getData_emprestimo() {
-        return data_emprestimo;
+    public String getdataEmprestimo() {
+        return dataEmprestimo;
     }
 
-    public void setData_emprestimo(String data_emprestimo) {
-        this.data_emprestimo = data_emprestimo;
+    public void setdataEmprestimo(LocalDate dataEmprestimo) {
+        this.dataEmprestimo = dataEmprestimo;
     }
 
-    public String getData_devolucao() {
-        return data_devolucao;
+    public String getdataDevolucao() {
+        return dataDevolucao;
     }
 
-    public void setData_devolucao(String data_devolucao) {
-        this.data_devolucao = data_devolucao;
+    public void setdataDevolucao(LocalDate dataDevolucao) {
+        this.dataDevolucao = dataDevolucao;
     }
 
 }
